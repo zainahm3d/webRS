@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webRS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "REMOVED",
+            authDomain: "REMOVED",
+            databaseURL: "REMOVED",
+            projectId: "REMOVED",
+            storageBucket: "REMOVED",
+            messagingSenderId: "REMOVED"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+        console.log('Firebase initialized')
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="myH1">
+                webRS
+            </h1>
+            <p class="mySubtitle">
+                Accord Coupe
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class "container">
+            <button onclick="commandCar('start')" class="myButton">Start</button>
+            <button onclick="commandCar('lock')" class="myButton">Lock</button>
+            <button onclick="commandCar('unlock')" class="myButton">Unlock</button>
+            <button onclick="commandCar('up')" class="myButton">Roll up</button>
+        </div>
+    </section>
+
+    <section>
+        <div class "container">
+            <br></br>
+            <p id="messageBar" class="logClass">no connection</p>
+        </div>
+    </section>
+</body>
+
+</html>
