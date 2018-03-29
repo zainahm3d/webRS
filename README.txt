@@ -1,5 +1,5 @@
 # webRS
-A web app and hardware solution to enable remote starting my car over the Hologram network. 
+A web app and hardware solution to enable remote starting my car over the Hologram network. I opted to use the REST api for sending commands instead of the available Hologram javascript package on NPM as a learning experience. It works well, so I will transition to the Hologram api soon. 
 
 Hologram dash code: /WebRS/HologramDashStarterCode.ino
 Web app front end code: /WebRS/Web App/script.js and WebRS/Web App/index.html
