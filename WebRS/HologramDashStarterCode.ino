@@ -1,6 +1,6 @@
 
-String myPhone = "+1MYNUMBER";
-String iftttPhone = "+1IFTTTNUMBER"; //actually not used anymore
+String myPhone = "+1MYNUMBER"; //don't need this
+String iftttPhone = "+1IFTTTNUMBER"; //don't need this either
 
 const int controlPin = R03;
 
