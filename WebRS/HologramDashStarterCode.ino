@@ -134,4 +134,11 @@ void setup() {
   SerialCloud.println(networkOp + " " + batPercent);
   HologramCloud.offRGB();
 }
-void loop(){}
+
+void loop() {
+ if (!HologramCloud.isConnected()) {
+  delay(500);
+  HologramCloud.connect();
+  delay(500);
+ }
+}
